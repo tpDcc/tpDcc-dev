@@ -93,29 +93,32 @@ def reload_modules():
         if k.startswith(modules_to_reload):
             del sys.modules[k]
 
-# NOTE: You need to replace this path with the path where your tpDcc-dev repo is located
-root_path = r"D:\tpDcc\tpDcc-dev"
-dcc_name = get_dcc_name()
-dcc_version = get_dcc_version(dcc_name)
-packages_paths = get_packages_paths(root_path)
-vendors_path = get_dcc_vendors_path(root_path, dcc_name, dcc_version)
-paths_to_register = packages_paths
-if vendors_path:
-    paths_to_register.append(vendors_path)
 
-# Add here your custom paths to add to sys.path
-custom_paths = []
-paths_to_register.extend(custom_paths)
+if __name__ == '__main__':
 
-for p in paths_to_register:
-    if os.path.isdir(p) and p not in sys.path:
-        sys.path.append(p)
-
-# =============================================================
-
-reload_modules()
+    # NOTE: You need to replace this path with the path where your tpDcc-dev repo is located
+    root_path = r"D:\tpDcc\tpDcc-dev"
+    dcc_name = get_dcc_name()
+    dcc_version = get_dcc_version(dcc_name)
+    packages_paths = get_packages_paths(root_path)
+    vendors_path = get_dcc_vendors_path(root_path, dcc_name, dcc_version)
+    paths_to_register = packages_paths
+    if vendors_path:
+        paths_to_register.append(vendors_path)
     
-os.environ['TPDCC_DEV'] = 'True'
-
-import tpDcc.loader
-tpDcc.loader.init()
+    # Add here your custom paths to add to sys.path
+    custom_paths = []
+    paths_to_register.extend(custom_paths)
+    
+    for p in paths_to_register:
+        if os.path.isdir(p) and p not in sys.path:
+            sys.path.append(p)
+    
+    # =============================================================
+    
+    reload_modules()
+        
+    os.environ['TPDCC_DEV'] = 'True'
+    
+    import tpDcc.loader
+    tpDcc.loader.init()
