@@ -94,7 +94,7 @@ def reload_modules():
             del sys.modules[k]
 
 
-if __name__ == '__main__':
+if __name__ in ('__main__', '__builtin__'):
 
     # NOTE: You need to replace this path with the path where your tpDcc-dev repo is located
     root_path = r"D:\tpDcc\tpDcc-dev"
