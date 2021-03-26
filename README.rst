@@ -32,7 +32,7 @@ Requirements
             pip install virtualenv
 
 
-* **Git** client : https://git-scm.com/
+* Make **Git** client is installed : https://git-scm.com/
 
 
 How to use
@@ -45,3 +45,5 @@ How to use
     - **setup_venv_py3.bat**: to create virtual environment for Python 3.
 
 3. Run **setup_vendors.bat** to install all specific DCC related repositories.
+
+4. Execute **main.py** in your favorite Python DCC editor to load tpDcc :)
