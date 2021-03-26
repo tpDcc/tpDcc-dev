@@ -97,7 +97,7 @@ def reload_modules():
 if __name__ in ('__main__', '__builtin__'):
 
     # NOTE: You need to replace this path with the path where your tpDcc-dev repo is located
-    root_path = r"D:\tpDcc\tpDcc-dev"
+    root_path = r"D:\dev\tpDcc\tpDcc-dev"
     dcc_name = get_dcc_name()
     dcc_version = get_dcc_version(dcc_name)
     packages_paths = get_packages_paths(root_path)
