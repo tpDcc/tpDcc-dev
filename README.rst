@@ -25,6 +25,13 @@ Requirements
         You can edit **setup_venv_py2.bat** and **setup_venv_py3.bat** if you want to use custom Python installation
         directories
 
+* Make sure **virtualenv** is installed:
+
+      .. code-block::
+
+            pip install virtualenv
+
+
 * **Git** client : https://git-scm.com/
 
 
