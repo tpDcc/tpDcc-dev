@@ -46,4 +46,4 @@ How to use
 
 3. Run **setup_vendors.bat** to install all specific DCC related repositories.
 
-4. Execute **main.py** in your favorite Python DCC editor to load tpDcc :)
+4. Execute **tpdcc_main.py** in your favorite Python DCC editor to load tpDcc :)
