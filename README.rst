@@ -44,6 +44,6 @@ How to use
     - **setup_venv_py2.bat**: to create virtual environment for Python 2.
     - **setup_venv_py3.bat**: to create virtual environment for Python 3.
 
-3. Run **setup_vendors.bat** to install all specific DCC related repositories.
+3. Run **setup_vendors.bat** to install all specific DCC related dependencies.
 
 4. Execute **tpdcc_main.py** in your favorite Python DCC editor to load tpDcc :)
