@@ -107,7 +107,10 @@ if __name__ in ('__main__', '__builtin__'):
         paths_to_register.append(vendors_path)
     
     # Add here your custom paths to add to sys.path
-    custom_paths = []
+    custom_paths = [
+        r'D:\dev\tpDcc\tpDcc-libs-nodegraph',
+        r'D:\dev\tpDcc\tpDcc-tools-nodepipe'
+    ]
     paths_to_register.extend(custom_paths)
     
     for p in paths_to_register:
