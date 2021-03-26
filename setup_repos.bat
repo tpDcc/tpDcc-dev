@@ -22,4 +22,5 @@ git clone https://github.com/tpDcc/tpDcc-tools-nameit.git
 git clone https://github.com/tpDcc/tpDcc-tools-renamer.git
 git clone https://github.com/tpDcc/tpDcc-tools-scripteditor.git
 git clone https://github.com/tpDcc/tpDcc-tools-unittests.git
+git clone https://github.com/tpDcc/tpDcc-tools-hub.git
 git clone https://github.com/tpDcc/tpDcc-tools-cookiecutter.git
